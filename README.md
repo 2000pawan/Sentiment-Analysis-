@@ -1,4 +1,6 @@
-# **Sentiment Analysis Project.**
+---
+
+# **Sentiment Analysis Project**
 
 ## **📌 Project Overview**
 This project performs **sentiment analysis** on text extracted from URLs using **Natural Language Processing (NLP)** techniques. It analyzes the sentiment and readability of the extracted content and saves the results in an Excel file.
@@ -9,8 +11,8 @@ This project performs **sentiment analysis** on text extracted from URLs using *
 
 ### **🔹 Step 1: Load Necessary Data**
 - The input file `input.xlsx` contains **URLs** with their corresponding **URL_IDs**.
-- Stopwords are loaded from the `StopWords` folder to filter out unnecessary words.
-- A **positive** and **negative** words dictionary is loaded from `MasterDictionary/`.
+- Stopwords are loaded from the [`StopWords`](https://github.com/2000pawan/Sentiment-Analysis-/tree/main/StopWords) folder to filter out unnecessary words.
+- A **positive** and **negative** words dictionary is loaded from [`MasterDictionary`](https://github.com/2000pawan/Sentiment-Analysis-/tree/main/MasterDictionary).
 
 ### **🔹 Step 2: Extract Text from URLs**
 - The script fetches the webpage content using `requests` and **BeautifulSoup**.
@@ -49,23 +51,35 @@ Ensure you have **Python 3.x** installed on your system.
 
 ### **📌 Steps to Run the Script**
 
-1️⃣ **Install Dependencies**  
+1️⃣ **Clone the Repository**  
+Run the following command to download the project:
+```sh
+git clone https://github.com/2000pawan/Sentiment-Analysis-
+cd Sentiment-Analysis-
+```
+
+2️⃣ **Install Dependencies**  
 Run the following command in your terminal or command prompt:
 ```sh
 pip install pandas requests beautifulsoup4 nltk openpyxl
 ```
 
-2️⃣ **Prepare the Input File**  
+3️⃣ **Prepare the Input File**  
 - Place `input.xlsx` in the same directory as the script.
 - Ensure it has **two columns: `URL_ID` and `URL`**.
 
-3️⃣ **Run the Script**  
+4️⃣ **Download Master Dictionary & Stopwords**  
+- **Master Dictionary:** [Download Here](https://github.com/2000pawan/Sentiment-Analysis-/tree/main/MasterDictionary)  
+- **Stopwords:** [Download Here](https://github.com/2000pawan/Sentiment-Analysis-/tree/main/StopWords)  
+Make sure these are placed in their respective folders.
+
+5️⃣ **Run the Script**  
 Navigate to the project folder and execute:
 ```sh
 python Sentiment_analysis.py
 ```
 
-4️⃣ **View the Output**  
+6️⃣ **View the Output**  
 - Extracted webpage text is saved in `url_text/`.
 - The final **sentiment analysis report** is saved as `output.xlsx`.
 
