@@ -127,5 +127,8 @@ os.makedirs("url_text", exist_ok=True)
 ✅ If you face encoding issues, use `ISO-8859-1` while reading text files.
 
 ---
+License
+
+This project is open-source and available for modification and enhancement.
 
 **🎯 Project Completed 🚀**
