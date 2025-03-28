@@ -1,4 +1,4 @@
-# **Sentiment Analysis Project - README**
+# **Sentiment Analysis Project.
 
 ## **1. Approach to the Solution**
 
