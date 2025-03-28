@@ -55,7 +55,6 @@ Ensure you have **Python 3.x** installed on your system.
 Run the following command to download the project:
 ```sh
 git clone https://github.com/2000pawan/Sentiment-Analysis-
-cd Sentiment-Analysis-
 ```
 
 2️⃣ **Install Dependencies**  
